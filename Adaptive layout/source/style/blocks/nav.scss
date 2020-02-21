@@ -1,0 +1,27 @@
+.nav{
+    @include phones{
+        display: none;
+    }
+}
+
+.nav-list{
+    display: flex;
+    margin-left: -65px;
+}
+
+.nav-item{
+    margin-left: 65px;
+
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: #111111;
+    letter-spacing: 0.3px;
+
+    @include avenir(light);
+    &:hover{
+        @include avenir(heavy);
+    }
+}
+

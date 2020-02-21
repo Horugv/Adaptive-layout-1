@@ -1,0 +1,138 @@
+.blog{
+    max-width: 1055px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.blog-bar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 90px;
+
+    @include tablets{
+        margin-top: 50px;
+    }
+    @include phones{
+        margin-top: 25px;
+    }
+}
+
+
+.blog-item{
+    display: flex;
+    justify-content: space-between;
+    
+
+    &:nth-child(even){
+        margin-top: 185px;
+        flex-direction: row-reverse;
+
+        & .blog-item-left{
+            text-align: right;
+        }
+    }
+    
+    @include tablets{
+        & .blog-item-desc{
+            margin-left: 15px;
+            
+        }
+        &:nth-child(even){
+            margin-top: 90px;
+            & .blog-item-desc{
+                margin-left: 0;
+                margin-right: 15px;
+                
+            }
+        }
+
+
+    }
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+        & .blog-item-desc{
+            margin-left: 0px;
+            
+        }
+        &:nth-child(even){
+            margin-top: 45px;
+            flex-direction: column;
+            & .blog-item-desc{
+                margin-right: 0px;
+            }
+        }
+    }
+
+}
+
+.blog-item-left{
+    flex: 1 1;
+
+}
+
+.blog-item-img{
+    max-width: 100%;
+
+}
+
+.blog-item-desc{
+    flex: 1 1;
+    max-width: 450px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    @include phones{
+        margin-top: 15px;
+        align-items: center;
+    }
+
+}
+
+.blog-item-desc-col{
+    @include phones{
+       text-align: center;
+    }
+}
+
+.blog-item-desc-title{
+    @include playfair(italic);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.blog-item-desc-text{
+    max-width: 405px;
+}
+
+.blog-item-desc-text{
+    margin-top: 30px;
+    @include avenir(roman);
+    color: #444444;
+    line-height: 1.9375rem;
+    @include tablets{
+        margin-top: 15px;
+    }
+
+
+}
+
+.blog-item-desc-btn{
+    
+    margin-top: 50px;
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    @include avenir(heavy);   
+    padding: 1.25rem 1.875rem;
+    cursor: pointer;
+
+    @include tablets{
+        margin-top: 25px;
+    }
+}

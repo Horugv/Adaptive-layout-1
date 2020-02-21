@@ -1,0 +1,24 @@
+// adjustment variables
+$beight: #ebefe2;
+$white: #f4f5f0 ;
+$green: #6c9c5a;
+$green-hover: #4e8839;
+$main-font-color: #566358;
+
+
+// Layout setups
+@import "./layout/normalize.scss";
+// Mixins
+@import "./helpers/mixins.scss";
+
+// Layout setups
+@import "./layout/fonts.scss";
+@import "./layout/setups.scss";
+
+
+// Mixins
+@import "./helpers/mixins.scss";
+
+// Block
+@import "./blocks/**/*"
+

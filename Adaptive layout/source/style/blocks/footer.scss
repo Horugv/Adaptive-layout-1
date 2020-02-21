@@ -1,0 +1,52 @@
+.footer{
+    margin-top: auto;
+    border-top: 1px solid #f2ede7;
+}
+
+.footer-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding-top: 40px;
+    padding-bottom: 35px;
+    
+   @include tablets{
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+   }
+   @include phones{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+   }
+
+
+
+}
+
+.footer-left-who{
+    font-size: 1.5rem;
+    @include playfair(bold);
+}
+
+.footer-left-copy{
+    margin-top: 5px;
+    color: #9f9f9f;
+    font-size: 0.875rem;
+    @include avenir(roman);
+}
+
+.footer-direct{
+    font-size: 0.875rem;
+    @include avenir(medium);
+    color: #9f9f9f;
+}
+
+.footer-right-who{
+    font-size: 0.875rem;
+    @include avenir(heavy);
+
+
+}

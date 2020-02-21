@@ -1,0 +1,102 @@
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('../../fonts/Avenir-Heavy.woff2') format('woff2'),
+        url('../../fonts/Avenir-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('../../fonts/Avenir-Medium.woff2') format('woff2'),
+        url('../../fonts/Avenir-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('../../fonts/Avenir-Light.woff2') format('woff2'),
+        url('../../fonts/Avenir-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Roman';
+    src: url('../../fonts/Avenir-Roman.woff2') format('woff2'),
+        url('../../fonts/Avenir-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-BookOblique';
+    src: url('../../fonts/Avenir-BookOblique.woff2') format('woff2'),
+        url('../../fonts/Avenir-BookOblique.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+@mixin avenir($style){
+
+    @if $style == medium{
+        font-family: 'Avenir-Medium';
+    }
+    @if $style == heavy{
+        font-family: 'Avenir-Heavy';
+    }
+    @if $style == light{
+        font-family: 'Avenir-Light';
+    }
+    @if $style == roman{
+        font-family: 'Avenir-Roman';
+    }
+    @if $style == bookObl{
+        font-family: 'Avenir-BookOblique';
+    }
+}
+
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PlayfairDisplay-italic';
+    src: url('../../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'PlayfairDisplay-bold';
+    src: url('../../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../../fonts/PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@mixin playfair($style: regular){
+
+    @if $style == regular{
+        font-family: 'PlayfairDisplay-Regular';
+    }
+    @if $style == italic{
+        font-family: 'PlayfairDisplay-italic';
+    }
+    @if $style == bold{
+        font-family: 'PlayfairDisplay-bold';
+    }
+}

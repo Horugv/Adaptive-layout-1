@@ -1,0 +1,128 @@
+html{
+    height: 100%;
+    
+    font-size: 16px;
+    
+    @include tablets{
+        font-size: 14px;
+    }
+
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialised;
+    font-size: 16px;
+
+    @include tablets{
+        font-size: 14px;
+    }
+    @include phones{
+        font-size: 12px;
+    }
+
+
+}
+.section-title{
+    @include playfair();
+    font-size: 3.125rem;
+    line-height: 6.25rem;
+    letter-spacing: 0.41px;
+    text-align: center;
+
+    @include tablets{
+        line-height: 5rem;
+    }
+}
+
+
+.wrapper{
+    //flex: 1;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-section{
+    margin-bottom: 225px;
+    
+    &:last-child{
+        margin-bottom: 145px;
+    }
+    &:first-child{
+        margin-top: 200px;
+
+    }
+    @include tablets{
+        margin-bottom: 100px;
+        &:last-child{
+            margin-bottom: 65px;
+        }
+        &:first-child{
+            margin-top: 75px;
+        }
+    }
+
+    @include phones{
+        margin-bottom: 50px;
+        &:last-child{
+            margin-bottom: 40px;
+        }
+        &:first-child{
+            margin-top: 50px;
+        }
+    }
+    
+}
+
+.container {
+
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    @include tablets{
+        width: 100%;
+        padding: 0 40px;
+    }
+    @include phones{
+        width: 90vw;
+    }
+   
+    
+}
+
+ul, li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+

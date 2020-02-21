@@ -1,0 +1,25 @@
+.CTA{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.CTA-btn{
+    @include avenir(medium);
+    background: transparent;
+    padding: 1.25rem 2.8125rem;
+    border: 1px solid #41475b;
+    font-size: 1.125rem;
+    margin-top: 60px;
+    cursor: pointer;
+
+    @include tablets{
+        margin-top: 40px;
+
+    }
+    @include phones{
+        margin-top: 20px;
+    }
+}
